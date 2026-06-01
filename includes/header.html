@@ -1,0 +1,110 @@
+<!-- =========================
+PLANET ROOFING HEADER
+/includes/header.html
+========================= -->
+
+<div class="pr-topbar">
+  <div class="container">
+    <span>Licensed & Insured Roofing Contractor Serving South Florida</span>
+    <a href="tel:19546001462">Call/Text: 954-600-1462</a>
+  </div>
+</div>
+
+<header class="pr-header">
+  <div class="pr-navwrap">
+
+    <a class="pr-logo" href="/">
+      <img
+        src="/images/logo/planet-roofing-logo.webp"
+        alt="Planet Roofing Fort Lauderdale Roofing Contractor"
+        width="150"
+        height="70"
+        loading="eager">
+    </a>
+
+    <button class="pr-hamburger" type="button" aria-label="Open Menu">
+      ☰
+    </button>
+
+    <nav class="pr-menu">
+
+      <a href="/about-planet-roofing/">About</a>
+
+      <div class="pr-dropdown">
+        <button class="pr-dropbtn" type="button">Roof Services ▾</button>
+        <div class="pr-submenu">
+          <a href="/all-roofing-services/">All Roofing Services</a>
+          <a href="/roof-repair-roofing-contractor/">Roof Repair</a>
+          <a href="/roof-replacement-roofing-contractor/">Roof Replacement</a>
+          <a href="/new-roof-roofing-contractor/">New Roof Installation</a>
+          <a href="/commercial-roofing-contractor/">Commercial Roofing</a>
+          <a href="/residential-roof-roofing-contractor/">Residential Roofing</a>
+          <a href="/same-day-roof-repair-roofing-contractor/">Same Day Roof Repair</a>
+          <a href="/roof-inspection-roofing-contractor/">Roof Inspection</a>
+          <a href="/roof-maintenance-roofing-contractor/">Roof Maintenance</a>
+          <a href="/roof-recovery-roofing-contractor/">Roof Recovery</a>
+          <a href="/roofing-code-violation-roofing-contractor/">Roofing Code Violations</a>
+          <a href="/waterproofing-roofing-contractor/">Waterproofing</a>
+        </div>
+      </div>
+
+      <div class="pr-dropdown">
+        <button class="pr-dropbtn" type="button">Roof Types ▾</button>
+        <div class="pr-submenu">
+          <a href="/metal-roof-roofing-contractor/">Metal Roofing</a>
+          <a href="/tile-roof-roofing-contractor/">Tile Roofing</a>
+          <a href="/shingle-roof-roofing-contractor/">Shingle Roofing</a>
+          <a href="/flat-roof-roofing-contractor/">Flat Roofing</a>
+          <a href="/tpo-roof-roofing-contractor/">TPO Roofing</a>
+          <a href="/stone-coated-roofing-contractor/">Stone Coated Roofing</a>
+          <a href="/cedar-shake-roofing-contractor/">Cedar Shake Roofing</a>
+          <a href="/composite-tile-roofing-contractor/">Composite Tile Roofing</a>
+        </div>
+      </div>
+
+      <div class="pr-dropdown">
+        <button class="pr-dropbtn" type="button">Service Areas ▾</button>
+        <div class="pr-submenu pr-wide">
+          <a href="/service-area/">All Service Areas</a>
+          <a href="/service-area/fort-lauderdale-fl/">Fort Lauderdale</a>
+          <a href="/service-area/broward-county-fl/roofing-contractor-pompano-beach/">Pompano Beach</a>
+          <a href="/service-area/broward-county-fl/roofing-contractor-oakland-park/">Oakland Park</a>
+          <a href="/service-area/broward-county-fl/roofing-contractor-plantation/">Plantation</a>
+          <a href="/service-area/broward-county-fl/roofing-contractor-hollywood/">Hollywood</a>
+          <a href="/service-area/broward-county-fl/roofing-contractor-coral-springs/">Coral Springs</a>
+          <a href="/service-area/broward-county-fl/roofing-contractor-davie/">Davie</a>
+          <a href="/service-area/broward-county-fl/roofing-contractor-sunrise/">Sunrise</a>
+          <a href="/service-area/miami-dade-fl/roofing-contractor-miami/">Miami</a>
+          <a href="/service-area/miami-dade-fl/roofing-contractor-miami-beach/">Miami Beach</a>
+          <a href="/service-area/miami-dade-fl/roofing-contractor-aventura/">Aventura</a>
+          <a href="/service-area/miami-dade-fl/roofing-contractor-doral/">Doral</a>
+          <a href="/service-area/miami-dade-fl/roofing-contractor-hialeah/">Hialeah</a>
+          <a href="/service-area/palm-beach-county-fl/roofing-contractor-boca-raton/">Boca Raton</a>
+          <a href="/service-area/palm-beach-county-fl/roofing-contractor-delray-beach/">Delray Beach</a>
+          <a href="/service-area/palm-beach-county-fl/roofing-contractor-west-palm-beach/">West Palm Beach</a>
+          <a href="/service-area/palm-beach-county-fl/roofing-contractor-boynton-beach/">Boynton Beach</a>
+        </div>
+      </div>
+
+      <a href="/roof-financing/">Financing</a>
+      <a href="/portfolio-of-roofing-projects/">Portfolio</a>
+      <a href="/faq-roofing/">FAQ</a>
+      <a href="/contact-planet-roofing/">Contact</a>
+
+      <a class="pr-menu-cta" href="tel:19546001462">Free Estimate</a>
+
+    </nav>
+
+  </div>
+</header>
+
+<script>
+document.addEventListener("click", function(e) {
+  const button = e.target.closest(".pr-hamburger");
+  const menu = document.querySelector(".pr-menu");
+
+  if (button && menu) {
+    menu.classList.toggle("active");
+  }
+});
+</script>

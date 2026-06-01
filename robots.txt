@@ -1,0 +1,38 @@
+# =========================================
+# ROBOTS.TXT - PLANET ROOFING HTML WEBSITE
+# https://planetroofingfl.com
+# =========================================
+
+User-agent: *
+Allow: /
+
+# =========================================
+# BLOCK UNNECESSARY FILES
+# =========================================
+
+Disallow: /cgi-bin/
+Disallow: /assets/private/
+Disallow: /*?replytocom=
+Disallow: /*?utm*
+Disallow: /search/
+
+# =========================================
+# ALLOW IMPORTANT FILES
+# =========================================
+
+Allow: /assets/
+Allow: /images/
+Allow: /*.css$
+Allow: /*.js$
+
+# =========================================
+# CRAWL DELAY
+# =========================================
+
+Crawl-delay: 1
+
+# =========================================
+# SITEMAP
+# =========================================
+
+Sitemap: https://planetroofingfl.com/sitemap.xml

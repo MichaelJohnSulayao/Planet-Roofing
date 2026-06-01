@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <sitemap>
+    <loc>https://planetroofingfl.com/sitemap-pages.xml</loc>
+  </sitemap>
+
+  <sitemap>
+    <loc>https://planetroofingfl.com/sitemap-service-area.xml</loc>
+  </sitemap>
+
+  <sitemap>
+    <loc>https://planetroofingfl.com/sitemap-blogs.xml</loc>
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://planetroofingfl.com/sitemap-fort-lauderdale.xml</loc>
+  </sitemap>
+
+</sitemapindex>

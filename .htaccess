@@ -1,0 +1,137 @@
+# =========================================
+# PLANET ROOFING .HTACCESS - HTML WEBSITE
+# https://planetroofingfl.com
+# =========================================
+
+Options -Indexes
+DirectoryIndex index.html
+
+RewriteEngine On
+RewriteBase /
+
+# =========================================
+# FORCE HTTPS + NON-WWW
+# =========================================
+
+# =========================================
+# REMOVE DOUBLE SLASHES
+# =========================================
+
+RewriteCond %{THE_REQUEST} \s/+(.*/)/+([^\s?]*) [NC]
+RewriteRule ^ %1%2 [R=301,L]
+
+# =========================================
+# 301 REDIRECTS - OLD URLS TO NEW URLS
+# =========================================
+
+# Financing
+RewriteRule ^roof-financing-offers-in-fort-lauderdale-fl/?$ /roof-financing-fort-lauderdale-fl/ [R=301,L]
+RewriteRule ^contact-for-roof-financing-option/?$ /roof-financing-fort-lauderdale-fl/ [R=301,L]
+
+# Blogs
+RewriteRule ^roof-financing-florida-flexible-roofing-payment-plans/?$ /blogs/roof-financing-florida-flexible-roofing-payment-plans/ [R=301,L]
+RewriteRule ^roofing-companies-with-payment-plans-for-bad-credit-planet-roofing/?$ /blogs/roofing-companies-with-payment-plans-for-bad-credit-planet-roofing/ [R=301,L]
+RewriteRule ^roofing-companies-with-no-credit-check-payment-plans-planet-roofing/?$ /blogs/roofing-companies-with-no-credit-check-payment-plans-planet-roofing/ [R=301,L]
+RewriteRule ^can-you-finance-a-roof-in-florida-planet-roofing/?$ /blogs/can-you-finance-a-roof-in-florida-planet-roofing/ [R=301,L]
+RewriteRule ^government-loans-for-roof-replacement-in-florida-planet-roofing/?$ /blogs/government-loans-for-roof-replacement-in-florida-planet-roofing/ [R=301,L]
+RewriteRule ^programs-to-help-pay-for-a-new-roof-in-florida/?$ /blogs/programs-to-help-pay-for-a-new-roof-in-florida/ [R=301,L]
+RewriteRule ^how-to-apply-for-pace-roof-financing-program/?$ /blogs/how-to-apply-for-pace-roof-financing-program/ [R=301,L]
+
+# Roofing services
+RewriteRule ^shingle-roofing-fort-lauderdale-fl/?$ /shingle-roofing-installation-fort-lauderdale-fl/ [R=301,L]
+RewriteRule ^roofing-services-in-broward-county-fl/?$ /service-area/broward-county-fl/roofing-contractor/ [R=301,L]
+
+# Broward County
+RewriteRule ^roofing-contractor-in-pompano-beach/?$ /service-area/broward-county-fl/roofing-contractor-pompano-beach/ [R=301,L]
+RewriteRule ^roofing-contractor-hollywood-fl/?$ /service-area/broward-county-fl/roofing-contractor-hollywood/ [R=301,L]
+RewriteRule ^weston-roofing-services/?$ /service-area/broward-county-fl/roofing-contractor-weston/ [R=301,L]
+RewriteRule ^trusted-roofing-services-in-coral-springs-fl/?$ /service-area/broward-county-fl/roofing-contractor-coral-springs/ [R=301,L]
+RewriteRule ^roofing-and-solar-contractor-in-plantation-fl/?$ /service-area/broward-county-fl/roofing-contractor-plantation/ [R=301,L]
+RewriteRule ^wilton-manors-roofing-experts/?$ /service-area/broward-county-fl/roofing-contractor-wilton-manors/ [R=301,L]
+RewriteRule ^oakland-park-quality-roofers-for-diverse-properties/?$ /service-area/broward-county-fl/roofing-contractor-oakland-park/ [R=301,L]
+RewriteRule ^roofing-contractor-in-lauderdale-by-the-sea-florida/?$ /service-area/broward-county-fl/roofing-contractor-lauderdale-by-the-sea/ [R=301,L]
+RewriteRule ^miramar-roofing-services/?$ /service-area/broward-county-fl/roofing-contractor-miramar/ [R=301,L]
+RewriteRule ^tamarac-roofing-services-expert-roofers/?$ /service-area/broward-county-fl/roofing-contractor-tamarac/ [R=301,L]
+RewriteRule ^trusted-lauderhill-roofer/?$ /service-area/broward-county-fl/roofing-contractor-lauderhill/ [R=301,L]
+
+# Fort Lauderdale neighborhoods
+RewriteRule ^roofing-contractor-in-tarpon-river-fort-lauderdale-fl/?$ /service-area/fort-lauderdale-fl/roofing-contractor-in-tarpon-river/ [R=301,L]
+RewriteRule ^roofing-contractor-in-south-middle-river-fort-lauderdale-fl/?$ /service-area/fort-lauderdale-fl/roofing-contractor-in-south-middle-river// [R=301,L]
+RewriteRule ^roofing-contractor-in-colee-hammock-fort-lauderdale-fl/?$ /service-area/fort-lauderdale-fl/roofing-contractor-in-colee-hammock/ [R=301,L]
+RewriteRule ^roofing-contractor-in-idlewyld-fort-lauderdale-fl/?$ /service-area/fort-lauderdale-fl/roofing-contractor-in-idlewyld/ [R=301,L]
+RewriteRule ^roofing-contractor-in-coral-ridge-fort-lauderdale-fl/?$ /service-area/fort-lauderdale-fl/roofing-contractor-in-coral-ridge/ [R=301,L]
+RewriteRule ^roofing-contractor-in-rio-vista-fort-lauderdale-fl/?$ /service-area/fort-lauderdale-fl/roofing-contractor-in-rio-vista/ [R=301,L]
+RewriteRule ^roofing-contractor-in-harbor-beach-fort-lauderdale-fl/?$ /service-area/fort-lauderdale-fl/roofing-contractor-in-harbor-beach/ [R=301,L]
+RewriteRule ^roofing-contractor-in-poinsettia-heights-fort-lauderdale-fl/?$ /service-area/fort-lauderdale-fl/roofing-contractor-in-poinsettia-heights/ [R=301,L]
+RewriteRule ^roofing-contractor-in-victoria-park-fort-lauderdale-fl/?$ /service-area/fort-lauderdale-fl/roofing-contractor-in-victoria-park/ [R=301,L]
+RewriteRule ^roofing-contractor-in-riviera-isles-fort-lauderdale-fl/?$ /service-area/fort-lauderdale-fl/roofing-contractor-in-riviera-isles/ [R=301,L]
+RewriteRule ^roofing-contractor-in-downtown-fort-lauderdale-fl/?$ /service-area/fort-lauderdale-fl/roofing-contractor-in-downtown/ [R=301,L]
+RewriteRule ^roofing-contractor-in-flagler-village-fort-lauderdale-fl/?$ /service-area/fort-lauderdale-fl/roofing-contractor-in-flagler-village/ [R=301,L]
+RewriteRule ^roofing-contractor-in-seven-isles-fort-lauderdale-fl/?$ /service-area/fort-lauderdale-fl/roofing-contractor-in-seven-isles/ [R=301,L]
+RewriteRule ^roofing-contractor-in-las-olas-fort-lauderdale-fl/?$ /service-area/fort-lauderdale-fl/roofing-contractor-in-las-olas/ [R=301,L]
+
+# Miami-Dade
+RewriteRule ^roofing-contractor-miami-fl/?$ /service-area/miami-dade-fl/roofing-contractor-miami/ [R=301,L]
+RewriteRule ^roofing-services-in-miami-beach-fl/?$ /service-area/miami-dade-fl/roofing-contractor-miami-beach/ [R=301,L]
+RewriteRule ^roofing-contractor-in-aventura-fl/?$ /service-area/miami-dade-fl/roofing-contractor-aventura/ [R=301,L]
+RewriteRule ^kendall-roofing-services-professional-roofers-serving-your-community/?$ /service-area/miami-dade-fl/roofing-contractor-kendall/ [R=301,L]
+RewriteRule ^reliable-roofing-contractors-in-hialeah/?$ /service-area/miami-dade-fl/roofing-contractor-hialeah/ [R=301,L]
+RewriteRule ^storm-resistant-roofing-services-in-homestead/?$ /service-area/miami-dade-fl/roofing-contractor-homestead/ [R=301,L]
+RewriteRule ^roofing-contractor-north-miami-beach-fl/?$ /service-area/miami-dade-fl/roofing-contractor-north-miami-beach/ [R=301,L]
+RewriteRule ^miami-gardens-roofing-services/?$ /service-area/miami-dade-fl/roofing-contractor-miami-gardens/ [R=301,L]
+RewriteRule ^premium-roofing-services-in-miami-lakes/?$ /service-area/miami-dade-fl/roofing-contractor-miami-lakes/ [R=301,L]
+RewriteRule ^luxury-coastal-roofing-services-in-golden-beach/?$ /service-area/miami-dade-fl/roofing-contractor-golden-beach/ [R=301,L]
+RewriteRule ^north-miami-roofing-services-professional-roofers-for-homes-businesses/?$ /service-area/miami-dade-fl/roofing-contractor-north-miami/ [R=301,L]
+RewriteRule ^oceanfront-coastal-roofing-specialists-in-miami-beach/?$ /service-area/miami-dade-fl/roofing-contractor-miami-beach/ [R=301,L]
+RewriteRule ^professional-roofing-services-near-ives-dairy/?$ /service-area/miami-dade-fl/roofing-contractor-ives-dairy/ [R=301,L]
+RewriteRule ^trusted-roofing-contractor-in-north-miami-beach-fl/?$ /service-area/miami-dade-fl/roofing-contractor-north-miami-beach/ [R=301,L]
+RewriteRule ^cutler-bay-roofing-services-professional-roofers-you-can-trust/?$ /service-area/miami-dade-fl/roofing-contractor-cutler-bay/ [R=301,L]
+RewriteRule ^residential-roofing-experts-in-palmetto-bay/?$ /service-area/miami-dade-fl/roofing-contractor-palmetto-bay/ [R=301,L]
+
+# Palm Beach County
+RewriteRule ^ocean-exposed-roofing-specialists-in-highland-beach/?$ /service-area/palm-beach-county-fl/roofing-contractor-highland-beach/ [R=301,L]
+RewriteRule ^storm-resilient-roofing-services-in-delray-beach/?$ /service-area/palm-beach-county-fl/roofing-contractor-delray-beach/ [R=301,L]
+RewriteRule ^trusted-roofing-contractor-serving-palm-beach-county/?$ /service-area/palm-beach-county-fl/roofing-contractor/ [R=301,L]
+RewriteRule ^dependable-coastal-roofing-services-in-lantana/?$ /service-area/palm-beach-county-fl/roofing-contractor-lantana/ [R=301,L]
+RewriteRule ^professional-roofing-company-in-west-palm-beach/?$ /service-area/palm-beach-county-fl/roofing-contractor-west-palm-beach/ [R=301,L]
+RewriteRule ^roofing-contractor-boca-raton-fl/?$ /service-area/palm-beach-county-fl/roofing-contractor-boca-raton/ [R=301,L]
+RewriteRule ^reliable-roofing-solutions-in-lake-worth-beach/?$ /service-area/palm-beach-county-fl/roofing-contractor-lake-worth-beach/ [R=301,L]
+RewriteRule ^roofing-contractor-boynton-beach-fl/?$ /service-area/palm-beach-county-fl/roofing-contractor-boynton-beach/ [R=301,L]
+
+Redirect 301 /cedar-shake-roofing-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/cedar-shake-roofing/
+Redirect 301 /commercial-roofing-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/commercial-roofing/
+Redirect 301 /composite-tile-in-fort-lauderdale-florida/ /service-area/fort-lauderdale-fl/composite-tile-roofing/
+Redirect 301 /contact-planet-roofing-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/contact-planet-roofing/
+Redirect 301 /contact-us-24-7-emergency-roof-work-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/contact-us-24-7-emergency-roof-work/
+Redirect 301 /expert-flat-roofing-services-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/flat-roofing-services/
+Redirect 301 /metal-roofing-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/metal-roofing/
+Redirect 301 /new-roof-installation-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/new-roofing/
+Redirect 301 /portfolio-of-roofing-projects-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/portfolio-of-roofing-projects/
+Redirect 301 /professional-waterproofing-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/waterproofing/
+Redirect 301 /residential-roofing-company-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/residential-roofing/
+Redirect 301 /roof-financing-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/roof-financing/
+Redirect 301 /roof-financing-offers-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/roof-financing/
+Redirect 301 /roof-inspection-services-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/roof-inspection/
+Redirect 301 /roof-maintenance-service-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/roof-maintenance/
+Redirect 301 /roof-recovery-service-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/roof-recovery/
+Redirect 301 /roof-repair-service-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/roof-repair/
+Redirect 301 /roof-replacement-service-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/roof-replacement/
+Redirect 301 /roofing-code-violation-service-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/roofing-code-violation/
+Redirect 301 /roofing-services-in-fort-lauderdale-florida/ /service-area/fort-lauderdale-fl/roofing-services/
+Redirect 301 /same-day-roof-repair-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/same-day-roof-repair/
+Redirect 301 /shingle-roofing-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/shingle-roofing/
+Redirect 301 /shingle-roofing-installation-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/shingle-roofing/
+Redirect 301 /stone-coated-metal-roofing-service-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/stone-coated-metal-roofing/
+Redirect 301 /tile-roofing-installation-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/tile-roofing/
+Redirect 301 /tpo-roofing-installation-in-fort-lauderdale-fl/ /service-area/fort-lauderdale-fl/tpo-roofing/
+
+Redirect 301 /roofing-contractor-in-colee-hammock/ /service-area/fort-lauderdale-fl/roofing-contractor-in-colee-hammock/
+Redirect 301 /roofing-contractor-in-coral-ridge/ /service-area/fort-lauderdale-fl/roofing-contractor-in-coral-ridge/
+Redirect 301 /roofing-contractor-in-downtown/ /service-area/fort-lauderdale-fl/roofing-contractor-in-downtown/
+Redirect 301 /roofing-contractor-in-flagler-village/ /service-area/fort-lauderdale-fl/roofing-contractor-in-flagler-village/
+Redirect 301 /roofing-contractor-in-harbor-beach/ /service-area/fort-lauderdale-fl/roofing-contractor-in-harbor-beach/
+Redirect 301 /roofing-contractor-in-idlewyld/ /service-area/fort-lauderdale-fl/roofing-contractor-in-idlewyld/
+Redirect 301 /roofing-contractor-in-las-olas/ /service-area/fort-lauderdale-fl/roofing-contractor-in-las-olas/
+Redirect 301 /roofing-contractor-in-poinsettia-heights/ /service-area/fort-lauderdale-fl/roofing-contractor-in-poinsettia-heights/
+Redirect 301 /roofing-contractor-in-rio-vista/ /service-area/fort-lauderdale-fl/roofing-contractor-in-rio-vista/
+Redirect 301 /roofing-contractor-in-seven-isles/ /service-area/fort-lauderdale-fl/roofing-contractor-in-seven-isles/
