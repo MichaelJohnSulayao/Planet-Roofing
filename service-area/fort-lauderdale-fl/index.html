@@ -1,55 +1,773 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-US">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Roofing Services in Broward County FL | Planet Roofing</title>
-  <meta name="description" content="Planet Roofing provides roof repair, roof replacement, tile, metal, shingle, flat and storm damage roofing across Broward County, FL. Call 954-600-1462.">
-  <meta name="keywords" content="roofing contractor Broward County FL, roofing services Broward County, roof repair Broward County, roof replacement Broward County, Broward County roofer, tile roofing Broward County, metal roofing Broward County, flat roof Broward County, storm damage roof repair Broward County">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Roofing Contractor in Fort Lauderdale, FL | Roof Repair & Replacement | Planet Roofing</title>
+  <meta name="description"
+    content="Planet Roofing is a licensed roofing contractor in Fort Lauderdale, FL. GAF-certified, BBB A+ accredited, license CCC1329271. Free inspections — call 954-600-1462.">
+  <meta name="keywords" content="roofing contractor Fort Lauderdale FL, roofing company Fort Lauderdale, roof repair Fort Lauderdale, roof replacement Fort Lauderdale, Fort Lauderdale roofer, tile roofing Fort Lauderdale, metal roofing Fort Lauderdale, shingle roofing Fort Lauderdale, flat roof Fort Lauderdale, Planet Roofing">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://planetroofingfl.com/service-area/fort-lauderdale-fl/">
+
+  <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Roofing Services in Broward County FL | Planet Roofing">
-  <meta property="og:description" content="Roof repair, roof replacement, tile, metal, shingle, flat and storm damage roofing across Broward County.">
-  <meta property="og:url" content="https://planetroofingfl.com/roofing-services-in-broward-county-fl/">
-  <meta property="og:image" content="https://planetroofingfl.com/wp-content/uploads/2026/02/composite-eko-roof-for-golf-communities-dark-color.webp">
+  <meta property="og:title" content="Roofing Contractor in Fort Lauderdale, FL | Planet Roofing">
+  <meta property="og:description"
+    content="Licensed and insured roofing contractor serving Fort Lauderdale homes, condos, HOAs, commercial properties, and coastal neighborhoods.">
+  <meta property="og:url" content="https://planetroofingfl.com/service-area/fort-lauderdale-fl/">
   <meta property="og:site_name" content="Planet Roofing">
+  <meta property="og:image"
+    content="https://planetroofingfl.com/wp-content/uploads/2026/02/composite-eko-roof-for-golf-communities-dark-color.webp">
+
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="geo.region" content="US-FL">
-  <meta name="geo.placename" content="Broward County">
-  <meta name="geo.position" content="26.1901;-80.3659">
-  <meta name="ICBM" content="26.1901, -80.3659">
+  <meta name="twitter:title" content="Roofing Contractor in Fort Lauderdale, FL | Planet Roofing">
+  <meta name="twitter:description"
+    content="Roof repair, roof replacement, inspections, metal roofing, tile roofing, flat roofing, and emergency roofing in Fort Lauderdale, Florida.">
+  <meta name="twitter:image"
+    content="https://planetroofingfl.com/wp-content/uploads/2026/02/composite-eko-roof-for-golf-communities-dark-color.webp">
+
   <link rel="icon" href="https://planetroofingfl.com/wp-content/uploads/2025/04/fav-150x150.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="https://planetroofingfl.com/wp-content/uploads/2025/04/fav.png">
   <link rel="stylesheet" href="/assets/style.css">
+  <style>
+    /* Custom hero spacing & H1 line count safety */
+    .hero .hero-grid {
+      grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+      gap: 32px;
+    }
+    .hero h1 {
+      font-size: clamp(36px, 5.8vw, 65px) !important;
+      line-height: 1.1;
+    }
+    @media (max-width: 991px) {
+      .hero .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+    }
+    /* 3-Column Project Photos Gallery with lift hover effects */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 28px;
+      margin-bottom: 28px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: var(--pr-shadow);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 38px rgba(7, 24, 45, 0.18);
+    }
+    @media (max-width: 767px) {
+      .gallery {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .gallery img {
+        height: 200px;
+      }
+    }
+    /* Premium Lightbox Modal Styles */
+    .pr-lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999999;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(7, 24, 45, 0.95);
+      backdrop-filter: blur(10px);
+      transition: opacity 0.3s ease;
+      opacity: 0;
+    }
+    .pr-lightbox.active {
+      display: block;
+      opacity: 1;
+    }
+    .pr-lightbox-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 900px;
+      max-height: 80vh;
+      object-fit: contain;
+      border-radius: 16px;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+      transform: scale(0.95);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .pr-lightbox.active .pr-lightbox-content {
+      transform: scale(1);
+    }
+    .pr-lightbox-caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 900px;
+      text-align: center;
+      color: #ffffff;
+      padding: 16px 0;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+    }
+    .pr-close {
+      position: absolute;
+      top: 24px;
+      right: 32px;
+      color: #ffffff;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.2s;
+      cursor: pointer;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+    }
+    .pr-close:hover {
+      color: var(--pr-red);
+      background: rgba(255,255,255,0.2);
+      transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+      .pr-lightbox-content {
+        width: 92%;
+      }
+    }
+  </style>
 
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","RoofingContractor"],"@id":"https://planetroofingfl.com/#localbusiness","name":"Planet Roofing","url":"https://planetroofingfl.com/","telephone":"+1-954-600-1462","email":"planetroofing@pcflc.com","image":"https://planetroofingfl.com/wp-content/uploads/2025/04/red-planet-1.png","logo":"https://planetroofingfl.com/wp-content/uploads/2025/04/red-planet-1.png","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"100 N Federal Highway","addressLocality":"Fort Lauderdale","addressRegion":"FL","postalCode":"33301","addressCountry":"US"},"areaServed":[{"@type":"AdministrativeArea","name":"Broward County"},{"@type":"City","name":"Fort Lauderdale"},{"@type":"City","name":"Hollywood"},{"@type":"City","name":"Pompano Beach"},{"@type":"City","name":"Weston"},{"@type":"City","name":"Miramar"},{"@type":"City","name":"Coral Springs"},{"@type":"City","name":"Plantation"},{"@type":"City","name":"Tamarac"},{"@type":"City","name":"Lauderhill"},{"@type":"City","name":"Wilton Manors"},{"@type":"City","name":"Oakland Park"},{"@type":"City","name":"Lauderdale-by-the-Sea"}],"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"20:00"},"sameAs":["https://maps.app.goo.gl/CXq2qm1NeJL96dF57","https://share.google/pA9pch8AA2Ye9TDY3"]},{"@type":"Service","@id":"https://planetroofingfl.com/roofing-services-in-broward-county-fl/#service","name":"Roofing Services in Broward County FL","serviceType":"Roof repair, roof replacement, tile roofing, metal roofing, shingle roofing, flat roofing and storm damage roofing","provider":{"@id":"https://planetroofingfl.com/#localbusiness"},"areaServed":{"@type":"AdministrativeArea","name":"Broward County, FL"}},{"@type":"FAQPage","@id":"https://planetroofingfl.com/roofing-services-in-broward-county-fl/#faq","mainEntity":[{"@type":"Question","name":"How much does roof replacement cost in Broward County?","acceptedAnswer":{"@type":"Answer","text":"Roof replacement cost in Broward County depends on roof size, roof type, slope, coastal exposure, deck condition, material selection, access, building height and permit requirements."}},{"@type":"Question","name":"Are permits required for roofing in Broward County?","acceptedAnswer":{"@type":"Answer","text":"Yes. Roof replacements and many significant repairs require permits through the proper city or Broward County jurisdiction. Work must meet Florida Building Code and inspection requirements."}},{"@type":"Question","name":"What roofing systems perform best in Broward County?","acceptedAnswer":{"@type":"Answer","text":"Common Broward County roofing systems include architectural shingles, concrete tile, clay tile, metal roofing, TPO, modified bitumen and reinforced waterproof flat roof systems."}},{"@type":"Question","name":"Does Planet Roofing repair storm damage in Broward County?","acceptedAnswer":{"@type":"Answer","text":"Yes. Planet Roofing can inspect and repair storm-related roof damage including leaks, lifted shingles, broken tiles, flashing damage, roof edge issues, flat roof membrane damage and temporary roof protection needs."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://planetroofingfl.com/"},{"@type":"ListItem","position":2,"name":"Service Area","item":"https://planetroofingfl.com/service-area/"},{"@type":"ListItem","position":3,"name":"Roofing Services in Broward County","item":"https://planetroofingfl.com/roofing-services-in-broward-county-fl/"}]}]}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://planetroofingfl.com/service-area/fort-lauderdale-fl/#webpage",
+        "url": "https://planetroofingfl.com/service-area/fort-lauderdale-fl/",
+        "name": "Roofing Contractor in Fort Lauderdale, FL | Planet Roofing",
+        "description": "Licensed and insured roofing contractor in Fort Lauderdale, Florida providing roof repair, roof replacement, inspections, tile roofing, metal roofing, shingle roofing, flat roofing, TPO roofing, and emergency roofing services.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://planetroofingfl.com/#website"
+        },
+        "about": {
+          "@id": "https://planetroofingfl.com/#roofingcontractor"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://planetroofingfl.com/service-area/fort-lauderdale-fl/#primaryimage"
+        },
+        "breadcrumb": {
+          "@id": "https://planetroofingfl.com/service-area/fort-lauderdale-fl/#breadcrumb"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://planetroofingfl.com/service-area/fort-lauderdale-fl/#primaryimage",
+        "url": "https://planetroofingfl.com/wp-content/uploads/2026/02/composite-eko-roof-for-golf-communities-dark-color.webp",
+        "contentUrl": "https://planetroofingfl.com/wp-content/uploads/2026/02/composite-eko-roof-for-golf-communities-dark-color.webp",
+        "caption": "Roofing contractor serving Fort Lauderdale Florida"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://planetroofingfl.com/service-area/fort-lauderdale-fl/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://planetroofingfl.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Service Area",
+            "item": "https://planetroofingfl.com/service-area/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Fort Lauderdale, FL",
+            "item": "https://planetroofingfl.com/service-area/fort-lauderdale-fl/"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://planetroofingfl.com/#website",
+        "url": "https://planetroofingfl.com/",
+        "name": "Planet Roofing",
+        "publisher": {
+          "@id": "https://planetroofingfl.com/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://planetroofingfl.com/#organization",
+        "name": "Planet Roofing",
+        "url": "https://planetroofingfl.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://planetroofingfl.com/wp-content/uploads/2025/04/red-planet-1.png"
+        },
+        "sameAs": [
+          "https://www.facebook.com/planetroofingfl",
+          "https://www.youtube.com/@PlanetRoofing/videos"
+        ]
+      },
+      {
+        "@type": "RoofingContractor",
+        "@id": "https://planetroofingfl.com/#roofingcontractor",
+        "name": "Planet Roofing",
+        "url": "https://planetroofingfl.com/",
+        "telephone": "+1-954-600-1462",
+        "email": "planetroofing@pcflc.com",
+        "priceRange": "$$",
+        "image": "https://planetroofingfl.com/wp-content/uploads/2025/04/red-planet-1.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "100 N Federal Highway",
+          "addressLocality": "Fort Lauderdale",
+          "addressRegion": "FL",
+          "postalCode": "33301",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 26.1224,
+          "longitude": -80.1373
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Fort Lauderdale"
+          },
+          {
+            "@type": "Place",
+            "name": "Las Olas"
+          },
+          {
+            "@type": "Place",
+            "name": "Rio Vista"
+          },
+          {
+            "@type": "Place",
+            "name": "Flagler Village"
+          },
+          {
+            "@type": "Place",
+            "name": "Seven Isles"
+          },
+          {
+            "@type": "Place",
+            "name": "Colee Hammock"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Broward County"
+          }
+        ],
+        "serviceType": [
+          "Roof Repair",
+          "Roof Replacement",
+          "Roof Inspection",
+          "Emergency Roof Repair",
+          "Tile Roofing",
+          "Metal Roofing",
+          "Shingle Roofing",
+          "Flat Roofing",
+          "TPO Roofing",
+          "Commercial Roofing",
+          "Residential Roofing",
+          "Waterproofing"
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "08:00",
+            "closes": "20:00"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://planetroofingfl.com/service-area/fort-lauderdale-fl/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does Planet Roofing service Fort Lauderdale, FL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — Planet Roofing actively serves homeowners and commercial property owners throughout Fort Lauderdale and Broward County. We handle roof inspections, repairs, and full replacements in Fort Lauderdale, and manage all permits through the Fort Lauderdale Building Services Division. Call (954) 600-1462 to schedule a free inspection."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does a roof replacement cost in Fort Lauderdale, FL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A typical asphalt shingle roof replacement in Fort Lauderdale ranges from $8,000 to $18,000, while a concrete or clay tile roof replacement ranges from $15,000 to $35,000+, and premium standing seam metal roofing ranges from $15,000 to $40,000+. Your final cost depends on Fort Lauderdale-specific factors like roof pitch, home size, and permit fees. Planet Roofing provides free written estimates with no obligation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a permit for roofing work in Fort Lauderdale?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — Florida law requires permits for all roofing replacements and major repairs in Fort Lauderdale. Planet Roofing files and closes all required permits through the Fort Lauderdale Building Services Division as part of every job, protecting homeowners from serious resale liabilities and insurance issues."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Planet Roofing help with storm damage insurance claims in Fort Lauderdale?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Planet Roofing provides detailed written inspection reports with photos documenting storm damage in an insurer-ready format. We typically schedule inspections within 48–72 hours of a storm event in Fort Lauderdale. Early documentation before conditions change is critical to protecting your claim."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What roofing material lasts longest in Fort Lauderdale's climate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Standing seam metal roofing offers the longest lifespan of 40 to 70 years in Fort Lauderdale's intense coastal climate, providing superior resistance to salt-air corrosion and hurricane winds. Concrete or clay tiles also provide excellent long-term durability of 50+ years when installed with premium high-wind underlayment systems. Wind-rated architectural shingles provide a reliable, cost-effective option with a lifespan of 20 to 25 years."
+            }
+          }
+        ]
+      }
+    ]
+  }
   </script>
 </head>
-<body>
- <div id="header"></div>
 
-<script>
-fetch('/includes/header-fort-lauderdale.html')
-.then(response => response.text())
-.then(data => {
-document.getElementById('header').innerHTML = data;
-});
-</script>
+<body>
+  <div id="header"></div>
+
+  <script>
+    fetch('/includes/header-fort-lauderdale.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  </script>
 
   <main>
-    <section class="hero"><div class="container"><div><div class="eyebrow">Broward County Roofing Contractor</div><h1>Roofing Services in Broward County, Florida</h1><p>Planet Roofing provides roof repair, roof replacement, roof inspections, tile roofing, metal roofing, shingle roofing, flat roofing and storm damage roofing for Broward County homes, condos, multifamily buildings and commercial properties.</p><p>From Fort Lauderdale and Hollywood to Pompano Beach, Weston, Miramar, Coral Springs, Plantation, Tamarac, Lauderhill, Wilton Manors, Oakland Park and Lauderdale-by-the-Sea, we install roofing systems built for coastal salt air, high winds, heavy rain, heat and Florida Building Code requirements.</p><div class="cta-row"><a class="btn" href="tel:9546001462">Call 954-600-1462</a><a class="btn light" href="#estimate">Request Free Estimate</a></div></div><aside class="hero-card"><h2>Broward County Roof Help</h2><ul><li>Roof repair and leak inspections</li><li>Full roof replacement and re-roofing</li><li>Tile, metal, shingle, flat and TPO systems</li><li>Residential, multifamily and commercial roofing</li><li>Storm damage and emergency roof protection</li></ul><a class="btn dark" href="sms:9546001462">Text Planet Roofing</a></aside></div></section>
-    <section><div class="container grid-2"><div><div class="eyebrow">County-Wide Roofing Knowledge</div><h2>Broward County Roofs Need Local Expertise</h2><p>Broward County stretches from the Everglades to the Atlantic Ocean. A tile roof in Weston, a shingle roof in Coral Springs, a flat commercial roof in Fort Lauderdale and an ocean-exposed property in Pompano Beach each need a different roofing strategy.</p><p>Planet Roofing inspects the full roofing system before recommending repair or replacement, including decking, roof edges, flashing, fasteners, underlayment, ventilation, penetrations, valleys, parapets, fascia, drainage and waterproofing transitions.</p><ul class="check"><li>Roof systems selected for salt air, wind, rain, humidity and heat.</li><li>Detailed inspections for leaks, corrosion, deck damage, edge metal and penetrations.</li><li>Written estimates with material options, scope details and next steps.</li><li>Repair and replacement recommendations based on actual roof condition.</li></ul></div><div class="local-card"><h3>Broward County Service Details</h3><div><span>Main Area</span><strong>Broward County, FL</strong></div><div><span>Major Cities</span><strong>Fort Lauderdale, Hollywood, Pompano Beach, Coral Springs</strong></div><div><span>Coastal Areas</span><strong>Lauderdale-by-the-Sea, Pompano Beach, Hollywood</strong></div><div><span>Inland Areas</span><strong>Weston, Plantation, Tamarac, Miramar</strong></div><div><span>Emergency Help</span><strong>Available</strong></div><div><span>Phone</span><strong>954-600-1462</strong></div></div></div></section>
-    <section class="soft"><div class="container grid-2"><img src="https://planetroofingfl.com/wp-content/uploads/2026/02/composite-eko-roof-for-golf-communities-dark-color.webp" alt="Roofing services in Broward County FL by Planet Roofing" loading="lazy"><div><div class="eyebrow">Services</div><h2>Roofing Services We Provide in Broward County</h2><p>We look beyond the visible leak. Our team reviews roof edges, fasteners, flashing, underlayment, valleys, membranes, ventilation, fascia, gutters and flat roof drainage before recommending the right solution.</p><div class="grid-2"><ul class="service-list"><li><a href="https://planetroofingfl.com/roof-repair-service-in-fort-lauderdale-fl/">Roof Repair</a></li><li><a href="https://planetroofingfl.com/roof-replacement-service-in-fort-lauderdale-fl/">Roof Replacement</a></li><li><a href="https://planetroofingfl.com/roof-inspection-services-in-fort-lauderdale-fl/">Roof Inspection</a></li><li><a href="https://planetroofingfl.com/shingle-roofing-installation-fort-lauderdale-fl/">Shingle Roofing</a></li></ul><ul class="service-list"><li><a href="https://planetroofingfl.com/tile-roofing-installation-in-fort-lauderdale-fl/">Tile Roofing</a></li><li><a href="https://planetroofingfl.com/metal-roofing-contractor-in-fort-lauderdale-fl/">Metal Roofing</a></li><li><a href="https://planetroofingfl.com/expert-flat-roofing-services-in-fort-lauderdale-fl/">Flat Roofing</a></li><li><a href="https://planetroofingfl.com/tpo-roofing-installation-in-fort-lauderdale-fl/">TPO Roofing</a></li></ul></div></div></div></section>
-    <section><div class="container"><div class="eyebrow">Broward Roofing Challenges</div><h2>Common Roof Issues Across Broward County</h2><div class="grid-3"><article class="card"><h3>Coastal Salt Exposure</h3><p class="muted">Eastern Broward properties need corrosion-resistant flashing, fasteners, vents, gutters and metal details.</p></article><article class="card"><h3>High-Wind Storms</h3><p class="muted">Storms test roof edges, fasteners, underlayment and flashing. Proper installation details help reduce wind vulnerability.</p></article><article class="card"><h3>Heavy Rain Leaks</h3><p class="muted">Seasonal downpours can expose weak valleys, roof-wall transitions, penetrations and flat roof drainage problems.</p></article><article class="card"><h3>Flat Roof Ponding</h3><p class="muted">Commercial, condo and low-slope roof sections need proper membranes, slope, drainage and flashing.</p></article><article class="card"><h3>Tile Roof Wear</h3><p class="muted">Concrete and clay tile roofs need strong underlayment, fastening and flashing details for long-term performance.</p></article><article class="card"><h3>UV and Humidity Damage</h3><p class="muted">Florida sun and humidity can age shingles, sealants, coatings and membranes faster without proper materials.</p></article></div></div></section>
-    <section class="soft"><div class="container"><div class="eyebrow">Service Areas</div><h2>Broward County Cities We Serve</h2><p>Use these internal links to build strong service-area structure and help customers find the right local roofing page.</p><div class="grid-4"><a class="city" href="https://planetroofingfl.com/roofing-services-in-fort-lauderdale-florida/">Fort Lauderdale</a><a class="city" href="https://planetroofingfl.com/roofing-contractor-hollywood-fl/">Hollywood</a><a class="city" href="https://planetroofingfl.com/roofing-contractor-in-pompano-beach/">Pompano Beach</a><a class="city" href="https://planetroofingfl.com/weston-roofing-services/">Weston</a><a class="city" href="https://planetroofingfl.com/miramar-roofing-services/">Miramar</a><a class="city" href="https://planetroofingfl.com/trusted-roofing-services-in-coral-springs-fl/">Coral Springs</a><a class="city" href="https://planetroofingfl.com/roofing-services-in-lauderdale-lakes-fl/">Lauderdale Lakes</a><a class="city" href="https://planetroofingfl.com/tamarac-roofing-services-expert-roofers/">Tamarac</a><a class="city" href="https://planetroofingfl.com/roofing-and-solar-contractor-in-plantation-fl/">Plantation</a><a class="city" href="https://planetroofingfl.com/trusted-lauderhill-roofer/">Lauderhill</a><a class="city" href="https://planetroofingfl.com/wilton-manors-roofing-experts/">Wilton Manors</a><a class="city" href="https://planetroofingfl.com/oakland-park-quality-roofers-for-diverse-properties/">Oakland Park</a></div></div></section>
-    <section><div class="container"><div class="eyebrow">Recent Work</div><h2>Roofing Project Transformations Near Broward County</h2><p>Use real project photos to build trust and increase conversions. This section is ready for before-and-after roof repair photos, tile roof work, shingle replacements, flat roof repairs and metal roofing details.</p><div class="gallery"><img src="https://planetroofingfl.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-03-21-at-11.28.58-AM-768x432.jpeg" alt="Broward County roofing project shingle roof work" loading="lazy"><img src="https://planetroofingfl.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-02-25-at-11.19.23-AM-2-768x576.jpeg" alt="Roof repair and replacement project in Broward County" loading="lazy"><img src="https://planetroofingfl.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-02-25-at-11.19.20-AM-3-768x576.jpeg" alt="Professional roofing project by Planet Roofing in South Florida" loading="lazy"></div></div></section>
-    <section class="soft"><div class="container grid-2"><div><div class="eyebrow">Why Choose Us</div><h2>Why Broward County Property Owners Choose Planet Roofing</h2><ul class="check"><li><strong>Licensed and insured:</strong> Professional roofing work with Florida code-compliant installation practices.</li><li><strong>County-wide experience:</strong> We understand coastal, inland, HOA, commercial and residential roofing needs.</li><li><strong>Multiple roof systems:</strong> Shingle, tile, metal, flat, TPO and roof repair options.</li><li><strong>Clear estimates:</strong> You receive a written scope with materials and next steps.</li><li><strong>Storm-ready planning:</strong> Roofing recommendations account for wind, rain, salt air, heat, humidity and permit standards.</li></ul></div><div class="redbox"><h2>Need a Roof Estimate in Broward County?</h2><p>Call Planet Roofing to schedule a roof inspection, leak repair estimate or full roof replacement consultation.</p><p><strong>Phone:</strong> <a href="tel:9546001462">954-600-1462</a><br><strong>Email:</strong> <a href="mailto:planetroofing@pcflc.com">planetroofing@pcflc.com</a></p><a class="btn light" href="#estimate">Start Your Request</a></div></div></section>
-    <section><div class="container grid-2"><div><div class="eyebrow">Nearby Counties</div><h2>Additional South Florida Roofing Areas</h2><p>These internal links support the full South Florida service-area structure.</p><div class="grid-2"><ul class="service-list"><li><a href="https://planetroofingfl.com/roofing-contractor-in-miami-dade-county/">Miami-Dade County</a></li><li><a href="https://planetroofingfl.com/miami-roofing-services-professional-roofers-across-the-city/">Miami</a></li><li><a href="https://planetroofingfl.com/roofing-contractor-in-aventura-fl/">Aventura</a></li><li><a href="https://planetroofingfl.com/coastal-roofing-specialists-in-north-miami-beach/">North Miami Beach</a></li></ul><ul class="service-list"><li><a href="https://planetroofingfl.com/trusted-roofing-contractor-serving-palm-beach-county/">Palm Beach County</a></li><li><a href="https://planetroofingfl.com/roofing-contractor-boca-raton-fl/">Boca Raton</a></li><li><a href="https://planetroofingfl.com/professional-roofing-company-in-west-palm-beach/">West Palm Beach</a></li><li><a href="https://planetroofingfl.com/booking-calendar/">Book Online</a></li></ul></div></div><div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114666.01176023093!2d-80.16836824528474!3d26.088703801813704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b9984228b958825%3A0x708fb03ddb662ff5!2sPlanet%20Roofing!5e0!3m2!1sen!2sus!4v1767411016283!5m2!1sen!2sus" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="Planet Roofing Google Map"></iframe></div></div></section>
-    <section class="soft faq"><div class="container"><div class="eyebrow">FAQ</div><h2>Broward County Roofing FAQs</h2><details><summary>How much does roof replacement cost in Broward County?</summary><p>Roof replacement cost in Broward County depends on roof size, roof type, slope, coastal exposure, deck condition, material selection, access, building height and permit requirements.</p></details><details><summary>Are permits required for roofing in Broward County?</summary><p>Yes. Roof replacements and many significant repairs require permits through the proper city or Broward County jurisdiction. Work must meet Florida Building Code and inspection requirements.</p></details><details><summary>What roofing systems perform best in Broward County?</summary><p>Common Broward County roofing systems include architectural shingles, concrete tile, clay tile, metal roofing, TPO, modified bitumen and reinforced waterproof flat roof systems.</p></details><details><summary>Does Planet Roofing repair storm damage in Broward County?</summary><p>Yes. Planet Roofing can inspect and repair storm-related roof damage including leaks, lifted shingles, broken tiles, flashing damage, roof edge issues, flat roof membrane damage and temporary roof protection needs.</p></details></div></section>
-    <section id="estimate"><div class="container grid-2"><div><div class="eyebrow">Free Estimate Request</div><h2>Request a Broward County Roofing Estimate</h2><p>Use this short form layout on your HTML page, or connect it to your existing form-handler.php. Short forms work better on mobile and help homeowners request help faster.</p><p><strong>Planet Roofing</strong><br>100 N Federal Highway, Fort Lauderdale, FL 33301<br><a href="tel:9546001462">954-600-1462</a><br><a href="mailto:planetroofing@pcflc.com">planetroofing@pcflc.com</a></p></div><form class="form" action="/form-handler.php" method="post"><input type="text" name="name" placeholder="Full Name" required><input type="tel" name="phone" placeholder="Phone Number" required><input type="email" name="email" placeholder="Email Address" required><select name="service" required><option value="">Select Roofing Service</option><option>Roof Repair</option><option>Roof Replacement</option><option>Roof Inspection</option><option>Flat / TPO Roofing</option><option>Tile Roofing</option><option>Metal Roofing</option><option>Shingle Roofing</option><option>Storm Damage Roof Repair</option></select><textarea name="message" placeholder="Tell us about your Broward County roof"></textarea><button class="btn" type="submit">Send Roofing Request</button></form></div></section>
+    <!-- SECTION 1 — HERO -->
+    <section class="hero" style="background: linear-gradient(110deg, rgba(7, 24, 45, 0.93), rgba(7, 24, 45, 0.68)), url('/images/pompano-beach-hero.png') center/cover no-repeat;">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow" style="background: #ffffff; color: #d71920; border-color: #ffffff; font-weight: 900; text-transform: uppercase; margin-bottom: 24px;">Licensed & Insured Fort Lauderdale Roofer</div>
+          <h1 style="color: #ffffff; font-weight: 900; margin-bottom: 24px;">Roofing Contractor in<br>Fort Lauderdale,<br>Florida</h1>
+          <p>Planet Roofing provides roof repair, roof replacement, roof inspections, tile roofing, metal roofing, shingle roofing, flat roofing, TPO roofing, waterproofing and storm damage roofing for Fort Lauderdale homes, condos, multifamily buildings and commercial properties.</p>
+          <p>Our roofing services are built for South Florida heat, heavy rain, wind, humidity, salt air exposure and Florida Building Code requirements.</p>
+          <div class="cta-row" style="margin-top: 28px;">
+            <a class="btn" href="tel:9546001462" style="background: #d71920; border-color: #d71920; color: #ffffff;">Call 954-600-1462</a>
+            <a class="btn btn-light" href="#estimate">Request Free Estimate</a>
+          </div>
+        </div>
+        <aside class="hero-card" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); color: #ffffff; padding: 28px; border-radius: var(--pr-radius-lg); box-shadow: var(--pr-shadow);">
+          <h2 style="color: #ffffff; margin-bottom: 20px;">Fort Lauderdale Roof Help</h2>
+          <ul class="list" style="margin: 0; padding: 0;">
+            <li style="color: #ffffff;">Roof leak inspections and repairs</li>
+            <li style="color: #ffffff;">Full roof replacement and re-roofing</li>
+            <li style="color: #ffffff;">Tile, metal, shingle, flat and TPO systems</li>
+            <li style="color: #ffffff;">Residential and commercial roofing</li>
+            <li style="color: #ffffff;">Storm damage and emergency roof protection</li>
+          </ul>
+          <a class="btn dark" href="sms:9546001462" style="margin-top: 24px; width: 100%; text-align: center; background: #07182d; border-color: #07182d; color: #ffffff!important;">Text Planet Roofing</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — LOCAL CONTEXT -->
+    <section class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Roofing in Fort Lauderdale: What Property Owners Deal With</h2>
+          <p class="lead"><strong>Fort Lauderdale has a mix of historic coastal bungalows, newer waterfront high-rises and condos, and mature residential neighborhoods. Many properties sit close to the Intracoastal or Atlantic coast, facing severe climate stressors like salt air, high winds, heavy rain, heat, and humidity.</strong></p>
+          <p>Planet Roofing is based in the heart of Fort Lauderdale, meaning we are intimately familiar with local climate stressors and permitting timelines. Pompano Beach and Fort Lauderdale are situated in Broward County's strict <strong>High-Velocity Hurricane Zone (HVHZ)</strong>, the most demanding wind zone in the United States. This designation dictates that all roofing installations must meet the rigorous requirements of <strong>Florida Building Code Section 1504</strong>, utilizing wind-rated systems and corrosion-resistant fasteners.</p>
+          <p>Our inspect-first approach identifies vulnerabilities like deteriorated valleys, salt-air rust, and aged sealants before they cause structural wood rot or mold inside your home.</p>
+        </div>
+        <div>
+          <img src="/images/residential-neighborhood.png"
+            alt="Residential rooftops in Fort Lauderdale Florida showing South Florida roofing conditions"
+            width="800" height="500" loading="lazy" class="rounded shadow"
+            title="Roofing conditions in Fort Lauderdale FL">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — SERVICE DETAILS BLOCK -->
+    <section class="section gray">
+      <div class="container grid-2">
+        <div>
+          <h2>Fort Lauderdale Service Details</h2>
+          <p class="lead">Planet Roofing is fully equipped to handle residential, commercial, HOA, and multi-family roofing challenges across Fort Lauderdale. Use this structured table to quickly check our local licensing, permit offices, and service capabilities.</p>
+          <p>We work closely with the <strong>Fort Lauderdale Building Services Division</strong> to coordinate product approvals, file required permits, schedule mandatory municipal inspections, and safely close out every project to protect your real estate asset's legal compliance and resale value.</p>
+        </div>
+        <div class="local-card" style="background: var(--pr-white); border: 1px solid var(--pr-border); padding: 24px; border-radius: var(--pr-radius); box-shadow: var(--pr-shadow);">
+          <h3 style="margin-top: 0; border-bottom: 2px solid var(--pr-red); padding-bottom: 8px;">Fort Lauderdale Roofing Profile</h3>
+          <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--pr-border);">
+            <span>Service Area</span><strong>Fort Lauderdale, FL</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--pr-border);">
+            <span>County Location</span><strong>Broward County</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--pr-border);">
+            <span>Distance from HQ</span><strong>0 miles (Primary Office Location)</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--pr-border);">
+            <span>Roof Systems Installed</span><strong>Tile · Metal · Shingle · Flat · TPO</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--pr-border);">
+            <span>Permit Office</span><strong>Fort Lauderdale Building Services Division</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--pr-border);">
+            <span>Florida Roofing License</span><strong>CCC1329271</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 10px 0;">
+            <span>Florida General License</span><strong>CGC1517295</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 — COMMON ROOF ISSUES IN FORT LAUDERDALE -->
+    <section class="section">
+      <div class="container">
+        <h2>Common Roof Problems Planet Roofing Sees in Fort Lauderdale</h2>
+        <p class="lead"><strong>Fort Lauderdale's coastal environment subjects local roofs to accelerated wear that does not occur in dry or inland climates. We identify and repair these common coastal issues daily before they escalate into costly failures.</strong></p>
+        
+        <div class="grid-2" style="margin-top: 34px; margin-bottom: 34px; gap: 24px;">
+          <div class="card" style="padding: 20px;">
+            <h3 style="color: var(--pr-red); margin-top: 0;">Salt Air Flashing Corrosion</h3>
+            <p>Properties near the Atlantic coast or Intracoastal Waterway face rapid rust on metal fasteners, valleys, gutters, and roof vents. We utilize high-grade, corrosion-resistant metals and sealants to ensure your roof transitions remain fully waterproof and storm-ready.</p>
+          </div>
+          <div class="card" style="padding: 20px;">
+            <h3 style="color: var(--pr-red); margin-top: 0;">Wind-Driven Rain & Valley Leaks</h3>
+            <p>Heavy tropical downpours put extreme pressure on roof valleys, flashing transitions, and penetrations. Small cracks in shingle sealants or broken tiles allow water to seep behind the outer barrier, exposing the underlayment to moisture intrusion.</p>
+          </div>
+          <div class="card" style="padding: 20px;">
+            <h3 style="color: var(--pr-red); margin-top: 0;">Tile Underlayment Degradation</h3>
+            <p>Many concrete tile roofs in Fort Lauderdale are 20+ years old. While the tiles themselves are highly durable, the underlying felt waterproofing membrane breaks down over time from thermal expansion, causing dry-in failure and leaks beneath visually sound tiles.</p>
+          </div>
+          <div class="card" style="padding: 20px;">
+            <h3 style="color: var(--pr-red); margin-top: 0;">UV & Heat Membrane Cracking</h3>
+            <p>Intense South Florida sun ages roofing materials rapidly. Unprotected shingle granules flake off, and standard flat roof coatings dry out and crack, leaving flat sections vulnerable to standing water and structural ponding leaks.</p>
+          </div>
+        </div>
+
+        <!-- REPAIR VS REPLACE COMPARISON TABLE -->
+        <h3 style="margin-top: 40px; margin-bottom: 16px;">Should You Repair or Replace Your Fort Lauderdale Roof?</h3>
+        <p>Planet Roofing uses a transparent assessment process to help you decide whether a targeted repair or a full re-roof is the smartest financial and structural decision. Our certified inspectors review your roof's age, deck health, and wind uplift resistance to provide a written recommendation.</p>
+        
+        <div style="overflow-x: auto; margin: 24px 0;">
+          <table style="width: 100%; border-collapse: collapse; text-align: left; background: var(--pr-white); border: 1px solid var(--pr-border);">
+            <thead>
+              <tr style="background: var(--pr-navy); color: var(--pr-white);">
+                <th style="padding: 12px; border: 1px solid var(--pr-border);">Roof Factor</th>
+                <th style="padding: 12px; border: 1px solid var(--pr-border);">When Roof Repair is Recommended</th>
+                <th style="padding: 12px; border: 1px solid var(--pr-border);">When Roof Replacement is Smarter</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 12px; border: 1px solid var(--pr-border);"><strong>Age of Roof</strong></td>
+                <td style="padding: 12px; border: 1px solid var(--pr-border);">Under 12 years (shingle) or 20 years (tile)</td>
+                <td style="padding: 12px; border: 1px solid var(--pr-border);">Over 15-20 years (shingle) or 25-30 years (tile)</td>
+              </tr>
+              <tr style="background: var(--pr-light);">
+                <td style="padding: 12px; border: 1px solid var(--pr-border);"><strong>Leak Severity</strong></td>
+                <td style="padding: 12px; border: 1px solid var(--pr-border);">Isolated to a single valley, pipe boot, or flashing</td>
+                <td style="padding: 12px; border: 1px solid var(--pr-border);">Multiple separate leaks, widespread decking rot, or interior mold</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px; border: 1px solid var(--pr-border);"><strong>Storm Damage</strong></td>
+                <td style="padding: 12px; border: 1px solid var(--pr-border);">Less than 25% of shingles or tiles displaced</td>
+                <td style="padding: 12px; border: 1px solid var(--pr-border);">Over 25-30% of roof area damaged or structural framing cracked</td>
+              </tr>
+              <tr style="background: var(--pr-light);">
+                <td style="padding: 12px; border: 1px solid var(--pr-border);"><strong>Insurance & Resale</strong></td>
+                <td style="padding: 12px; border: 1px solid var(--pr-border);">Targeted maintenance to satisfy minor inspection requirements</td>
+                <td style="padding: 12px; border: 1px solid var(--pr-border);">Older roofs rejected by home insurers or failing real estate escrow</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 — SERVICES GRID -->
+    <section class="section gray">
+      <div class="container">
+        <h2>Roofing Services Planet Roofing Provides in Fort Lauderdale</h2>
+        <p class="lead">Every roofing service Planet Roofing provides in Fort Lauderdale is available throughout the city — each linked below with Fort Lauderdale-specific detail.</p>
+
+        <div class="links-grid" style="margin-top: 24px; margin-bottom: 34px;">
+          <a href="/service-area/fort-lauderdale-fl/roof-repair/"><strong>Roof Repair</strong><br><span
+              style="font-size: 14px; font-weight: 400; color: var(--pr-muted);">Targeted repairs for leaks, salt air corrosion, flashing, and shingles in Fort Lauderdale.</span></a>
+          <a href="/service-area/fort-lauderdale-fl/roof-replacement/"><strong>Roof Replacement</strong><br><span
+              style="font-size: 14px; font-weight: 400; color: var(--pr-muted);">Full re-roof with permits handled directly through Fort Lauderdale Building Services Division.</span></a>
+          <a href="/service-area/fort-lauderdale-fl/roof-inspection/"><strong>Roof Inspection</strong><br><span
+              style="font-size: 14px; font-weight: 400; color: var(--pr-muted);">Free professional written inspection reports for home buyers, sellers, and insurance.</span></a>
+          <a href="/service-area/fort-lauderdale-fl/shingle-roofing/"><strong>Shingle Roofing</strong><br><span
+              style="font-size: 14px; font-weight: 400; color: var(--pr-muted);">Architectural asphalt shingles rated for 130+ mph wind zones.</span></a>
+          <a href="/service-area/fort-lauderdale-fl/tile-roofing/"><strong>Tile Roofing</strong><br><span
+              style="font-size: 14px; font-weight: 400; color: var(--pr-muted);">Concrete and clay tile installation, repairs, and underlayment replacement.</span></a>
+          <a href="/service-area/fort-lauderdale-fl/metal-roofing/"><strong>Metal Roofing</strong><br><span
+              style="font-size: 14px; font-weight: 400; color: var(--pr-muted);">Premium standing seam metal roofing with extreme durability and UV reflection.</span></a>
+          <a href="/service-area/fort-lauderdale-fl/flat-roofing-services/"><strong>Flat Roofing</strong><br><span
+              style="font-size: 14px; font-weight: 400; color: var(--pr-muted);">Modified bitumen and multi-ply flat roof repair, coatings, and replacements.</span></a>
+          <a href="/service-area/fort-lauderdale-fl/tpo-roofing/"><strong>TPO Roofing</strong><br><span
+              style="font-size: 14px; font-weight: 400; color: var(--pr-muted);">Reflective commercial-grade single-ply TPO membrane roofing systems.</span></a>
+          <a href="/service-area/fort-lauderdale-fl/waterproofing/"><strong>Waterproofing</strong><br><span
+              style="font-size: 14px; font-weight: 400; color: var(--pr-muted);">High-performance silicone and elastomeric roof coatings to protect against standing rain.</span></a>
+          <a href="/service-area/fort-lauderdale-fl/same-day-roof-repair/"><strong>Storm Damage Repair</strong><br><span
+              style="font-size: 14px; font-weight: 400; color: var(--pr-muted);">Emergency tarping, leak defense, and wind damage repair after South Florida storms.</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 — PROJECT PHOTOS -->
+    <section class="section">
+      <div class="container">
+        <h2>Roofing Work Completed in Fort Lauderdale</h2>
+        <p class="lead">Planet Roofing has completed a wide variety of roofing projects throughout Fort Lauderdale and the surrounding South Florida neighborhoods.</p>
+        
+        <div class="gallery" style="margin-top: 24px; margin-bottom: 24px;">
+          <img src="/images/tile-roof/tile-roof-installed.webp"
+            alt="Tile roof installation completed by Planet Roofing in Fort Lauderdale Florida" loading="lazy" class="rounded shadow" onclick="openLightbox(this)">
+          <img src="/images/metal-roof/metal-roof-finished.webp"
+            alt="Standing seam metal roof installed by Planet Roofing near Fort Lauderdale FL" loading="lazy" class="rounded shadow" onclick="openLightbox(this)">
+          <img src="/images/flat-roof/tpo-commercial-roof.webp"
+            alt="TPO flat roof installation by Planet Roofing serving Fort Lauderdale Florida" loading="lazy" class="rounded shadow" onclick="openLightbox(this)">
+          <img src="/images/shingle-roof/shingle-roof-finished.webp"
+            alt="Shingle roof replacement completed by Planet Roofing in Fort Lauderdale FL" loading="lazy" class="rounded shadow" onclick="openLightbox(this)">
+          <img src="/images/waterproofing/waterproofing-residential-roof.webp"
+            alt="Roof waterproofing service completed near Fort Lauderdale Florida" loading="lazy" class="rounded shadow" onclick="openLightbox(this)">
+          <img src="/images/roof-inspection/roof-inspection.webp"
+            alt="Roof inspection by Planet Roofing in Fort Lauderdale FL — licensed contractor" loading="lazy" class="rounded shadow" onclick="openLightbox(this)">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7 — WHY PLANET ROOFING IN FORT LAUDERDALE -->
+    <section class="section dark">
+      <div class="container grid-2">
+        <div>
+          <h2>Why Fort Lauderdale Property Owners Choose Planet Roofing</h2>
+          <div class="area-points">
+            <div class="area-box"
+              style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); padding: 20px; border-radius: 14px; margin-bottom: 16px;">
+              <h3>Licensed for Broward County Work</h3>
+              <p>Planet Roofing holds active Florida roofing license <strong>CCC1329271</strong> and general contractor license <strong>CGC1517295</strong>. We pull and close all permits legally through the <strong>Fort Lauderdale Building Services Division</strong> to protect your property's value and insurance compliance.</p>
+            </div>
+            <div class="area-box"
+              style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); padding: 20px; border-radius: 14px; margin-bottom: 16px;">
+              <h3>Manufacturer-Certified Installations</h3>
+              <p>We are certified by GAF, CertainTeed, and Owens Corning, the three largest roofing manufacturers. This allows us to provide long-term, manufacturer-backed warranties that non-certified installers cannot offer.</p>
+            </div>
+            <div class="area-box"
+              style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); padding: 20px; border-radius: 14px; margin-bottom: 16px;">
+              <h3>Full Inspection Before Any Recommendation</h3>
+              <p>We inspect the complete roofing system—including decking, fasteners, flashing, underlayment, and drainage—before recommending any repair or replacement. We never guess your roof's condition from the ground.</p>
+            </div>
+            <div class="area-box"
+              style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); padding: 20px; border-radius: 14px;">
+              <h3>Permits and Documentation Handled Completely</h3>
+              <p>Our team handles all permitting paperwork, product approvals, inspections, and insurance documentation, ensuring a stress-free process for homeowners and commercial property managers.</p>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+          <img src="/images/residential-clipboard.png"
+            alt="Planet Roofing contractor reviewing Fort Lauderdale permits and inspection report" class="rounded shadow"
+            style="width: 100%; border-radius: var(--pr-radius);">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8 — FAQ -->
+    <section class="section">
+      <div class="container">
+        <h2>Common Questions From Fort Lauderdale Roofing Customers</h2>
+        <div class="faq">
+          <details>
+            <summary>Does Planet Roofing service Fort Lauderdale, FL?</summary>
+            <p>Yes — Planet Roofing actively serves homeowners and commercial property owners throughout Fort Lauderdale and Broward County. We handle roof inspections, repairs, and full replacements in Fort Lauderdale, and manage all permits through the <strong>Fort Lauderdale Building Services Division</strong>. Call <strong>(954) 600-1462</strong> to schedule a free inspection.</p>
+          </details>
+          <details>
+            <summary>How much does a roof replacement cost in Fort Lauderdale, FL?</summary>
+            <p>A typical asphalt shingle roof replacement in Fort Lauderdale ranges from <strong>$8,000 to $18,000</strong>, while a tile roof replacement ranges from <strong>$15,000 to $35,000+</strong>, and premium standing seam metal roofing ranges from <strong>$15,000 to $40,000+</strong>. Your final cost depends on Fort Lauderdale-specific factors like roof pitch, home size, and permit fees. Planet Roofing provides free written estimates with no obligation.</p>
+          </details>
+          <details>
+            <summary>Do I need a permit for roofing work in Fort Lauderdale?</summary>
+            <p>Yes — Florida law requires permits for all roofing replacements and major repairs in Fort Lauderdale. Planet Roofing files and closes all required permits through the <strong>Fort Lauderdale Building Services Division</strong> as part of every job, protecting homeowners from serious resale liabilities and insurance issues.</p>
+          </details>
+          <details>
+            <summary>Can Planet Roofing help with storm damage insurance claims in Fort Lauderdale?</summary>
+            <p>Yes. Planet Roofing provides detailed written inspection reports with photographs that document storm damage in the format most useful to insurance adjusters. We can typically schedule a post-storm inspection in Fort Lauderdale within <strong>48–72 hours</strong>. Getting documentation early — before conditions change — is the most important step in protecting your claim.</p>
+          </details>
+          <details>
+            <summary>What roofing material lasts longest in Fort Lauderdale's climate?</summary>
+            <p>Standing seam metal roofing offers the longest lifespan of <strong>40 to 70 years</strong> in Fort Lauderdale's intense coastal climate, providing superior resistance to salt-air corrosion and hurricane winds. Concrete or clay tiles also provide excellent long-term durability of <strong>50+ years</strong> when installed with premium high-wind underlayment systems. Wind-rated architectural shingles provide a reliable, cost-effective option with a lifespan of <strong>20 to 25 years</strong>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9 — NEARBY SERVICE AREAS -->
+    <section class="section gray">
+      <div class="container">
+        <h2>Roofing Service Areas Near Fort Lauderdale</h2>
+        <p class="lead">Planet Roofing serves Fort Lauderdale and these nearby Broward County and South Florida communities.</p>
+        <div class="local-links mt-3">
+          <a href="https://planetroofingfl.com/service-area/broward-county-fl/roofing-contractor-hollywood/">Hollywood</a>
+          <a href="https://planetroofingfl.com/service-area/broward-county-fl/roofing-contractor-pompano-beach/">Pompano Beach</a>
+          <a href="https://planetroofingfl.com/service-area/broward-county-fl/roofing-contractor-plantation/">Plantation</a>
+          <a href="https://planetroofingfl.com/service-area/broward-county-fl/roofing-contractor-wilton-manors/">Wilton Manors</a>
+          <a href="https://planetroofingfl.com/service-area/broward-county-fl/roofing-contractor-oakland-park/">Oakland Park</a>
+          <a href="https://planetroofingfl.com/service-area/broward-county-fl/roofing-contractor-coral-springs/">Coral Springs</a>
+          <a href="https://planetroofingfl.com/service-area/broward-county-fl/roofing-contractor-weston/">Weston</a>
+          <a href="https://planetroofingfl.com/service-area/broward-county-fl/roofing-contractor-tamarac/">Tamarac</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10 — MAP & LOCATION -->
+    <section class="section gray map">
+      <div class="container grid-2">
+        <div>
+          <h2>Visit Planet Roofing in Fort Lauderdale</h2>
+          <p class="lead">Planet Roofing is located at 100 N Federal Highway, Fort Lauderdale, FL 33301. We serve Fort Lauderdale, Pompano Beach, Hollywood, Plantation, Oakland Park, Wilton Manors, Lauderdale-By-The-Sea, and surrounding Broward County and South Florida areas.</p>
+          <div class="local-links">
+            <a href="https://planetroofingfl.com/service-area/fort-lauderdale-fl/roofing-contractor-in-las-olas/">Las Olas Roofing</a>
+            <a href="https://planetroofingfl.com/service-area/fort-lauderdale-fl/roofing-contractor-in-rio-vista/">Rio Vista Roofing</a>
+            <a href="https://planetroofingfl.com/service-area/fort-lauderdale-fl/roofing-contractor-in-flagler-village/">Flagler Village Roofing</a>
+            <a href="https://planetroofingfl.com/service-area/">All Service Areas</a>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114666.01176023093!2d-80.16836824528474!3d26.088703801813704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b9984228b958825%3A0x708fb03ddb662ff5!2sPlanet%20Roofing!5e0!3m2!1sen!2sus!4v1767411016283!5m2!1sen!2sus"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Planet Roofing Google Map"></iframe>
+      </div>
+    </section>
+
+    <!-- SECTION 11 — CALL TO ACTION -->
+    <section class="section text-center bg-red" id="estimate"
+      style="background: linear-gradient(135deg, rgba(7, 24, 45, 0.9), rgba(7, 24, 45, 0.95)), url('/images/residential-cta.png') center/cover no-repeat; padding: 76px 0;">
+      <div class="container">
+        <h2 style="color: #ffffff;">Get a Free Roof Inspection in Fort Lauderdale — No Obligation</h2>
+        <p class="lead" style="color: #ffffff; max-width: 800px; margin: 0 auto 24px auto;">
+          A free professional roof inspection is the smartest first step to verify your roof's condition, whether you are dealing with active leaks or preparing for hurricane season. Planet Roofing proudly serves residential, commercial, HOA, and multi-family properties across Fort Lauderdale and Broward County. We handle all city permitting, detailed insurance documentation, and offer flexible financing options to fit your budget.
+        </p>
+        <div class="hero-actions" style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a class="btn" href="tel:9546001462"
+            style="background: var(--pr-red); color: var(--pr-white)!important; border-color: var(--pr-red); box-shadow: 0 10px 24px rgba(215,25,32,0.24);">Call (954) 600-1462</a>
+          <a class="btn secondary" href="https://planetroofingfl.com/contact-planet-roofing/"
+            style="background: transparent; color: var(--pr-white)!important; border-color: var(--pr-white); box-shadow: none;">Request a Free Estimate</a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- TRUST FOOTER BLOCK -->
+  <div
+    style="background: var(--pr-navy); color: #dbe5ef; border-top: 1px solid rgba(255,255,255,0.1); padding: 34px 0; font-size: 14px; line-height: 1.6;">
+    <div class="container"
+      style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px; align-items: center;">
+      <div>
+        <strong style="color: var(--pr-white); font-size: 16px;">Planet Roofing</strong> | Licensed & Insured Florida Roofing Contractor<br>
+        License: <strong>CCC1329271</strong> | <strong>CGC1517295</strong><br>
+        Certified: <strong>GAF</strong> | <strong>CertainTeed</strong> | <strong>Owens Corning</strong> | <strong>APOC</strong> | <strong>NEOGARD</strong><br>
+        BBB A+ Accredited
+      </div>
+      <div>
+        Serving <strong>Fort Lauderdale</strong>, and all of Broward County<br>
+        Phone: <strong>(954) 600-1462</strong> | Website: <a href="https://planetroofingfl.com"
+          style="color: var(--pr-white); text-decoration: underline;">planetroofingfl.com</a><br>
+        Address: 100 N Federal Highway, Fort Lauderdale, FL 33301
+      </div>
+    </div>
+  </div>
+
+  <!-- Premium Lightbox Modal -->
+  <div id="pr-lightbox" class="pr-lightbox" onclick="closeLightbox()">
+    <span class="pr-close" onclick="closeLightbox(event)">&times;</span>
+    <img class="pr-lightbox-content" id="pr-lightbox-img" onclick="event.stopPropagation()">
+    <div id="pr-lightbox-caption" class="pr-lightbox-caption"></div>
+  </div>
+
+  <script>
+    function openLightbox(imgElement) {
+      const lightbox = document.getElementById('pr-lightbox');
+      const lightboxImg = document.getElementById('pr-lightbox-img');
+      const lightboxCaption = document.getElementById('pr-lightbox-caption');
+      
+      lightboxImg.src = imgElement.src;
+      lightboxCaption.innerHTML = imgElement.alt;
+      
+      lightbox.style.display = 'block';
+      setTimeout(() => {
+        lightbox.classList.add('active');
+      }, 10);
+      
+      // Prevent body scrolling
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(event) {
+      if (event) {
+        event.stopPropagation();
+      }
+      const lightbox = document.getElementById('pr-lightbox');
+      lightbox.classList.remove('active');
+      
+      setTimeout(() => {
+        lightbox.style.display = 'none';
+      }, 300);
+      
+      // Restore scrolling
+      document.body.style.overflow = '';
+    }
+
+    // Close lightbox on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+  </script>
+
   <div id="footer-include"></div>
-<script src="/assets/includes.js"></script>
-  </body>
+  <script src="/assets/includes.js"></script>
+</body>
+
 </html>

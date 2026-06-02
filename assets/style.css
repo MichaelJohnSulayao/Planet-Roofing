@@ -354,8 +354,8 @@ header.navbar{
 .btn-red{background:var(--pr-red);border-color:var(--pr-red);color:#fff!important}
 .btn-dark{background:var(--pr-navy);border-color:var(--pr-navy)}
 .btn-dark:hover{background:var(--pr-dark);border-color:var(--pr-dark)}
-.btn-light{background:var(--pr-white);color:var(--pr-dark)!important;border-color:var(--pr-white)}
-.btn-light:hover{background:var(--pr-gold);border-color:var(--pr-gold);color:var(--pr-dark)!important}
+.btn-light, .btn.light{background:var(--pr-white);color:var(--pr-dark)!important;border-color:var(--pr-white)}
+.btn-light:hover, .btn.light:hover{background:var(--pr-gold);border-color:var(--pr-gold);color:var(--pr-dark)!important}
 .btn-outline{background:transparent;color:var(--pr-red)!important;border-color:var(--pr-red);box-shadow:none}
 .btn-outline:hover{background:var(--pr-red);color:var(--pr-white)!important}
 .btn-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:24px}
